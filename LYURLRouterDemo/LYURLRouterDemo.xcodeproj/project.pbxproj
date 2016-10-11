@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87F1929D1DAC8F250096A798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F1929C1DAC8F250096A798 /* main.m */; };
+		87F192A01DAC8F250096A798 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F1929F1DAC8F250096A798 /* AppDelegate.m */; };
+		87F192A61DAC8F250096A798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F192A41DAC8F250096A798 /* Main.storyboard */; };
+		87F192A81DAC8F250096A798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F192A71DAC8F250096A798 /* Assets.xcassets */; };
+		87F192AB1DAC8F250096A798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F192A91DAC8F250096A798 /* LaunchScreen.storyboard */; };
+		87F192B61DAC8F630096A798 /* LYURLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F192B51DAC8F630096A798 /* LYURLRouter.m */; };
+		87F192B91DACBDBB0096A798 /* URLRouterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F192B81DACBDBB0096A798 /* URLRouterTableViewController.m */; };
+		87F192BC1DACBFC90096A798 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F192BB1DACBFC90096A798 /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87F192981DAC8F250096A798 /* LYURLRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYURLRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F1929C1DAC8F250096A798 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87F1929E1DAC8F250096A798 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87F1929F1DAC8F250096A798 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87F192A51DAC8F250096A798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87F192A71DAC8F250096A798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87F192AA1DAC8F250096A798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87F192AC1DAC8F250096A798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F192B41DAC8F630096A798 /* LYURLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYURLRouter.h; sourceTree = "<group>"; };
+		87F192B51DAC8F630096A798 /* LYURLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYURLRouter.m; sourceTree = "<group>"; };
+		87F192B71DACBDBB0096A798 /* URLRouterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLRouterTableViewController.h; sourceTree = "<group>"; };
+		87F192B81DACBDBB0096A798 /* URLRouterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLRouterTableViewController.m; sourceTree = "<group>"; };
+		87F192BA1DACBFC90096A798 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		87F192BB1DACBFC90096A798 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87F192951DAC8F250096A798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87F1928F1DAC8F250096A798 = {
+			isa = PBXGroup;
+			children = (
+				87F1929A1DAC8F250096A798 /* LYURLRouterDemo */,
+				87F192991DAC8F250096A798 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87F192991DAC8F250096A798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87F192981DAC8F250096A798 /* LYURLRouterDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87F1929A1DAC8F250096A798 /* LYURLRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				87F1929E1DAC8F250096A798 /* AppDelegate.h */,
+				87F1929F1DAC8F250096A798 /* AppDelegate.m */,
+				87F192B31DAC8F460096A798 /* LYURLRouter */,
+				87F192B71DACBDBB0096A798 /* URLRouterTableViewController.h */,
+				87F192B81DACBDBB0096A798 /* URLRouterTableViewController.m */,
+				87F192BA1DACBFC90096A798 /* DetailViewController.h */,
+				87F192BB1DACBFC90096A798 /* DetailViewController.m */,
+				87F192A41DAC8F250096A798 /* Main.storyboard */,
+				87F192A71DAC8F250096A798 /* Assets.xcassets */,
+				87F192A91DAC8F250096A798 /* LaunchScreen.storyboard */,
+				87F192AC1DAC8F250096A798 /* Info.plist */,
+				87F1929B1DAC8F250096A798 /* Supporting Files */,
+			);
+			path = LYURLRouterDemo;
+			sourceTree = "<group>";
+		};
+		87F1929B1DAC8F250096A798 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87F1929C1DAC8F250096A798 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87F192B31DAC8F460096A798 /* LYURLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				87F192B41DAC8F630096A798 /* LYURLRouter.h */,
+				87F192B51DAC8F630096A798 /* LYURLRouter.m */,
+			);
+			path = LYURLRouter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87F192971DAC8F250096A798 /* LYURLRouterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F192AF1DAC8F250096A798 /* Build configuration list for PBXNativeTarget "LYURLRouterDemo" */;
+			buildPhases = (
+				87F192941DAC8F250096A798 /* Sources */,
+				87F192951DAC8F250096A798 /* Frameworks */,
+				87F192961DAC8F250096A798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYURLRouterDemo;
+			productName = LYURLRouterDemo;
+			productReference = 87F192981DAC8F250096A798 /* LYURLRouterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87F192901DAC8F250096A798 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = LaiYoung;
+				TargetAttributes = {
+					87F192971DAC8F250096A798 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 87F192931DAC8F250096A798 /* Build configuration list for PBXProject "LYURLRouterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87F1928F1DAC8F250096A798;
+			productRefGroup = 87F192991DAC8F250096A798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87F192971DAC8F250096A798 /* LYURLRouterDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87F192961DAC8F250096A798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F192AB1DAC8F250096A798 /* LaunchScreen.storyboard in Resources */,
+				87F192A81DAC8F250096A798 /* Assets.xcassets in Resources */,
+				87F192A61DAC8F250096A798 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87F192941DAC8F250096A798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F192BC1DACBFC90096A798 /* DetailViewController.m in Sources */,
+				87F192B61DAC8F630096A798 /* LYURLRouter.m in Sources */,
+				87F192B91DACBDBB0096A798 /* URLRouterTableViewController.m in Sources */,
+				87F192A01DAC8F250096A798 /* AppDelegate.m in Sources */,
+				87F1929D1DAC8F250096A798 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87F192A41DAC8F250096A798 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F192A51DAC8F250096A798 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87F192A91DAC8F250096A798 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F192AA1DAC8F250096A798 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87F192AD1DAC8F250096A798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87F192AE1DAC8F250096A798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87F192B01DAC8F250096A798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYURLRouterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LaiYoung.LYURLRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87F192B11DAC8F250096A798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYURLRouterDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LaiYoung.LYURLRouterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87F192931DAC8F250096A798 /* Build configuration list for PBXProject "LYURLRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F192AD1DAC8F250096A798 /* Debug */,
+				87F192AE1DAC8F250096A798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F192AF1DAC8F250096A798 /* Build configuration list for PBXNativeTarget "LYURLRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F192B01DAC8F250096A798 /* Debug */,
+				87F192B11DAC8F250096A798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87F192901DAC8F250096A798 /* Project object */;
+}
