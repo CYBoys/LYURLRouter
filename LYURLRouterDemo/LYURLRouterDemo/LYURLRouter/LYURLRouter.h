@@ -7,18 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - TYPEDEF
 
 /**
  *  配合 ｀openURL:｀ 系列函数使用
  */
-typedef void(^LYRouterHandler)(NSDictionary *routerParameters);
+typedef void(^LYRouterHandler)(NSDictionary * _Nullable routerParameters);
 
 /**
  *  需要返回一个 object，配合 `objectForURL:` 系列函数使用，block里面包含了通过router传过来的参数（直接添加在router里的或者通过userInfo传的参数）
  */
-typedef id(^LYRouterObjectHandler)(NSDictionary *routerParameters);
+typedef _Nonnull id (^LYRouterObjectHandler)(NSDictionary * _Nullable routerParameters);
 
 /**
  *  完成操作回调
@@ -28,7 +31,7 @@ typedef void(^LYRouterCompletiion)();
 /**
  *  操作错误回调
  */
-typedef void(^LYRouterFailure)(NSError *error);
+typedef void(^LYRouterFailure)(NSError * _Nullable error);
 
 
 @interface LYURLRouter : NSObject
@@ -41,14 +44,14 @@ typedef void(^LYRouterFailure)(NSError *error);
  @param URLPattern 带上 scheme
  @param handler    该 block 会传一个字典，包含了注册的 URL 中对应的变量以及传过来的参数。
  */
-+ (void)registerURLPattern:(NSString *)URLPattern toHandler:(LYRouterHandler)handler;
++ (void)registerURLPattern:(NSString *)URLPattern toHandler:(LYRouterHandler _Nullable)handler;
 /**
  注册 URLPattern 对应的 ObjectHandler，需要返回一个 object 给调用方，以获取 object 做其它操作
  
  @param URLPattern 带上 scheme
  @param handler    该 block 会传一个字典，包含注册的 URL 中对应的变量以及传过来的参数。
  */
-+ (void)registerURLPattern:(NSString *)URLPattern toObjectHandler:(LYRouterObjectHandler)handler;
++ (void)registerURLPattern:(NSString *)URLPattern toObjectHandler:(LYRouterObjectHandler _Nullable)handler;
 
 #pragma mark - OpenURL Methods
 
@@ -66,7 +69,7 @@ typedef void(^LYRouterFailure)(NSError *error);
  @param completion 完成操作回调
  @param failure    错误操作回调
  */
-+ (void)openURL:(NSString *)URL completion:(LYRouterCompletiion)completion failure:(LYRouterFailure)failure;
++ (void)openURL:(NSString *)URL completion:(LYRouterCompletiion _Nullable)completion failure:(LYRouterFailure _Nullable)failure;
 
 /**
  打开这个URL，如果这个URL已经注册，则匹配这个URL，并执行handler
@@ -76,7 +79,7 @@ typedef void(^LYRouterFailure)(NSError *error);
  @param completion 完成操作回调
  @param failure    错误操作回调
  */
-+ (void)openURL:(NSString *)URL withUserInfo:(NSDictionary *)userInfo completion:(LYRouterCompletiion)completion failure:(LYRouterFailure)failure;
++ (void)openURL:(NSString *)URL withUserInfo:(NSDictionary *_Nullable)userInfo completion:(LYRouterCompletiion _Nullable)completion failure:(LYRouterFailure _Nullable)failure;
 
 #pragma mark - GetObjectURL Methods
 
@@ -97,7 +100,7 @@ typedef void(^LYRouterFailure)(NSError *error);
  
  @return  通过｀toObjectHandler｀方法注册返回的对象
  */
-+ (id)objectForURL:(NSString *)URL withUserInfo:(NSDictionary *)userInfo;
++ (id)objectForURL:(NSString *)URL withUserInfo:(NSDictionary * _Nullable)userInfo;
 
 #pragma mark - Other Methods
 
@@ -131,8 +134,6 @@ typedef void(^LYRouterFailure)(NSError *error);
 
 @end
 
-
-#import <UIKit/UIKit.h>
 @interface UIViewController (LYURLRouter)
 
 + (UIViewController *)currentViewController;
@@ -140,3 +141,5 @@ typedef void(^LYRouterFailure)(NSError *error);
 + (UINavigationController *)currentNavigationViewController;
 
 @end
+
+NS_ASSUME_NONNULL_END

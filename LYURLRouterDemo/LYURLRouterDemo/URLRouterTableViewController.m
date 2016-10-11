@@ -31,7 +31,13 @@
 
 - (NSArray *)dataSource {
     if (!_dataSource) {
-        _dataSource = @[@"openURL:",@"openURL_completion_failure",@"openURL_userInfo_completion_failure",@"objectForURL:",@"objectForURL_userInfo",@"canOpenURL",@"deregister"];
+        _dataSource = @[@"openURL:",
+                        @"openURL_completion_failure",
+                        @"openURL_userInfo_completion_failure",
+                        @"objectForURL:",
+                        @"objectForURL_userInfo",
+                        @"canOpenURL",
+                        @"deregister"];
     }
     return _dataSource;
 }
@@ -64,7 +70,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
-        case 0: {//openURL
+        case 0: {//openURL，通过url传两个值
             [LYURLRouter openURL:[kDetailViewControllerURL appendingParams:@{@"value":@"Qintui",@"userName":@"LaiYoung_"}]];
         }
             break;
@@ -78,7 +84,7 @@
             }];
         }
             break;
-        case 2: {//openUrl_userInfo_completion_failure
+        case 2: {//openUrl_userInfo_completion_failure，通过UserInfo传值
             [LYURLRouter openURL:kDetailViewControllerURL withUserInfo:@{@"value":@"15923456720",@"userName":@"LaiYoung_"} completion:^{
                 NSLog(@"_______________openUrl_userInfo_completion______________");
             } failure:^(NSError *error) {

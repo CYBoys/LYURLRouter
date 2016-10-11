@@ -268,15 +268,13 @@ NSString *const LYRouterPatameterUserInfo = @"LYRouterParameterUserInfo";
          *  假如 url 是 www.github.com 这种，就不行，因为 url 中本身就含有@"."，所以在匹配 url 的时候也会当成一个节点来处理，也就会出现匹配不到的情况
          */
         NSString *component = [pathComponents componentsJoinedByString:@"."];
-        //* 字典中的keyPath是使用@"."来连接的，例如下面的示例中keyPath就是@"mgj.~.search.:keyword"，得到的value就是 （"_" = "<__NSMallocBlock__: 0x608000240900>"） */
+        //* 字典中的keyPath是使用@"."来连接的，例如下面的示例中keyPath就是@"qintui.~.loginVC"，得到的value就是 （"_" = "<__NSMallocBlock__: 0x608000240900>"） */
         /**
          {
-            mgj =     {
+            qintui =     {
                 "~" =         {
-                    search =             {
-                        ":keyword" =                 {
-                            "_" = "<__NSMallocBlock__: 0x608000240900>";
-                        };
+                    loginVC =             {
+                        "_" = "<__NSMallocBlock__: 0x608000240900>";
                     };
                 };
             };

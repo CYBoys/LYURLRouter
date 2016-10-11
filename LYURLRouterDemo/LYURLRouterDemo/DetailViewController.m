@@ -31,7 +31,9 @@
             }
             [[UIViewController currentNavigationViewController] pushViewController:detailVC animated:YES];
         }];
+        
 //        [LYURLRouter registerURLPattern:@"http://LaiYoung_/DetailViewController" toHandler:nil];
+        
         [LYURLRouter registerURLPattern:@"http://LaiYoung_/DetailViewController_" toObjectHandler:^id(NSDictionary *routerParameters) {
             NSLog(@"toObjectHandler = %@",routerParameters);
             DetailViewController *detailVC = [self new];
